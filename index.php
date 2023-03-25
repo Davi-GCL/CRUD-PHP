@@ -49,7 +49,7 @@ include("comps/cabecalho.php");
                             <td><?= $estudante['curso']?></td>
                             <td>
                               <a href="visualiza.php" class="btn btn-info btn-sm">Visualizar</a>
-                              <a href="edita.php" class="btn btn-success btn-sm">Editar</a>
+                              <a href="edita.php?id=<?=$estudante["ID"]?>" class="btn btn-success btn-sm">Editar</a>
                               <a href="exclui.php" class="btn btn-danger btn-sm">Excluir</a>
                             </td>
 
