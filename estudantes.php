@@ -1,23 +1,14 @@
 <?php 
-session_start();
+$pagTitle = "Adicionar Estudante";
+require("dbcon.php");
+include("comps/cabecalho.php");
 
 ?>
 
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--/Navbar -->
 
-    <title>CRUD PHP e MySQL</title>
-  </head>
-  <body>
-
-    <div class="container">
+    <div class="container mt-3">
         <div class="raw">
             <div class="col-mb-12">
                 <div class="card">

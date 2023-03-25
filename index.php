@@ -1,40 +1,14 @@
 <?php 
+$pagTitle = "Lista de Estudantes";
 require("dbcon.php");
+include("comps/cabecalho.php");
 
 ?>
 
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Lista de Estudantes</title>
-  </head>
-  <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a href="index.php" class="navbar-brand"><img src="img/fbtech_logo.png" alt="logo da fbtech" class="img-fluid" style="width:30%;"></a>
-      <div class="">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link active">Início</a>
-          </li>
-          <li class="nav-item">
-            <a href="estudantes.php" class="btn nav-link ">Estudante</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="btn nav-link">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
   <!--/Navbar -->
   
     <div class="container mt-3">
