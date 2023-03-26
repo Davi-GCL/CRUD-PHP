@@ -1,8 +1,8 @@
 <?php 
-$pagTitle = "Adicionar Estudante";
+$pagTitle = "Cadastrar Estudante";
 require("dbcon.php");
 include("comps/cabecalho.php");
-
+include("comps/banner.php");
 ?>
 
 
@@ -13,7 +13,7 @@ include("comps/cabecalho.php");
             <div class="col-mb-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Adicionar estudantes
+                        <h4>Cadastrar dados do estudante
                             <a href="index.php" class="btn btn-danger float-end">Voltar</a>
                         </h4>
                     </div>
@@ -51,5 +51,6 @@ include("comps/cabecalho.php");
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <?php include("comps/footer.php");?>
   </body>
 </html>

@@ -2,15 +2,13 @@
 $pagTitle = "Lista de Estudantes";
 require("dbcon.php");
 include("comps/cabecalho.php");
-
+include("comps/banner.php");
 ?>
+  <!--/Head  -->
 
-
-
-
-  
   <!--/Navbar -->
-  
+
+  <!--/Banner -->
     <div class="container mt-3">
         <div class="row">
             <div class="col-mb-12">
@@ -72,13 +70,14 @@ include("comps/cabecalho.php");
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    
+    <?php include("comps/footer.php");?>
   </body>
+</html>
 
   <!-- Desafio: inserir em todos os arquivos do sistema do sistema CRUD (arquivos de visualizacao):
- -um mesmo cabeçalho (header) para todas as paginas com a tag 'title' trazendo uma variavel php para apresentacao do nome da pagina;
- -um banner com uma variavel php para apresentacao do nome de cada pagina;
- -uma barra de navegacao com os seguintes links: inicio, estudantes e contato;
- -um mesmo rodape(footer) para todas as paginas do CRUD com os seguinte texto de credito: 2023, FBTECH. Todos os difeitos reservados;
+ -X um mesmo cabeçalho (header) para todas as paginas com a tag 'title' trazendo uma variavel php para apresentacao do nome da pagina;
+ -X um banner com uma variavel php para apresentacao do nome de cada pagina;
+ -X uma barra de navegacao com os seguintes links: inicio, estudantes e contato;
+ -X um mesmo rodape(footer) para todas as paginas do CRUD com os seguinte texto de credito: 2023, FBTECH. Todos os difeitos reservados;
 -->
-</html>

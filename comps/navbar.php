@@ -2,7 +2,7 @@
 
 if($pagTitle == "Lista de Estudantes"){
     $btn_inicio = "active";
-}else if($pagTitle == "Adicionar Estudante"){
+}else if($pagTitle == "Cadastrar Estudante"){
     $btn_estudantes = "active";
 }else {
     $btn_contato = "ative";
@@ -12,7 +12,7 @@ if($pagTitle == "Lista de Estudantes"){
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
       <a href="index.php" class="navbar-brand"><img src="img/fbtech_logo.png" alt="logo da fbtech" class="img-fluid" style="width:30%;"></a>
-      <div class="">
+      <div class="navbar-expand">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="index.php" class="nav-link <?=$btn_inicio?>">Início</a>
