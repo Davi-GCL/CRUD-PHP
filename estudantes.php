@@ -9,6 +9,8 @@ include("comps/banner.php");
   <!--/Navbar -->
 
     <div class="container mt-3">
+
+      <?php include("comps/mensagem.php"); ?>
         <div class="raw">
             <div class="col-mb-12">
                 <div class="card">
