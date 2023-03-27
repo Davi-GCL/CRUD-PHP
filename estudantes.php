@@ -1,5 +1,5 @@
 <?php 
-$pagTitle = "Cadastrar Estudante";
+$pagTitle = "Cadastrar Estudantes";
 require("dbcon.php");
 include("comps/cabecalho.php");
 include("comps/banner.php");

@@ -2,7 +2,7 @@
 
 if($pagTitle == "Lista de Estudantes"){
     $btn_inicio = "active";
-}else if($pagTitle == "Cadastrar Estudante"){
+}else if($pagTitle == "Cadastrar Estudantes"){
     $btn_estudantes = "active";
 }else {
     $btn_contato = "ative";
