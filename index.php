@@ -9,7 +9,7 @@ include("comps/banner.php");
   <!--/Navbar -->
 
   <!--/Banner -->
-    <div class="container mt-3">
+    <div class="container mt-3  mb-5">
         <div class="row">
             <div class="col-mb-12">
                 <div class="card">

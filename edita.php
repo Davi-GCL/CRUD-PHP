@@ -1,6 +1,9 @@
 <?php 
+session_start();
+
 $pagTitle = "Editar Estudante";
 require("dbcon.php");
+
 include("comps/cabecalho.php");
 
 ?>
@@ -19,35 +22,44 @@ include("comps/cabecalho.php");
                     </div>
                     <div class="card-body">
                     <?php
-                        if(isset($_GET["ID"])){
-                            $estudante_id = mysqli_real_escape_string($conn,$_GET["ID"]);
-                        }
+                        if(isset($_GET["id"])){
+                            $estudante_id = mysqli_real_escape_string($conn,$_GET["id"]);
+                            $query = "SELECT * FROM estudantes WHERE ID='$estudante_id'";
+                            $query_exe = mysqli_query($conn, $query);
 
+                            if(mysqli_num_rows($query_exe) > 0){
+                              $estudante= mysqli_fetch_array($query_exe);
                     ?>
 
                       <form action="codigo.php" method="POST">
                       <div class="mb-3">
                         <label for="">Nome do Estudante</label>
-                        <input type="text" class="form-control" name="nome">
+                        <input type="text" class="form-control" name="nome" value="<?=$estudante['nome'];?>">
                       </div>
                       <div class="mb-3">
                         <label for="">E-mail</label>
-                        <input type="text" class="form-control" name="email">
+                        <input type="text" class="form-control" name="email" value="<?=$estudante['email'];?>">
                       </div>
                       <div class="mb-3">
                         <label for="">Telefone</label>
-                        <input type="text" class="form-control" name="telefone">
+                        <input type="text" class="form-control" name="telefone" value="<?=$estudante['telefone'];?>">
                       </div>
                       <div class="mb-3">
                       <div class="mb-3">
                         <label for="">Curso</label>
-                        <input type="text" class="form-control" name="curso">
+                        <input type="text" class="form-control" name="curso" value="<?=$estudante['curso'];?>">
                       </div>
                       <div class="mb-3">
-                        <button class="btn btn-danger" name="add_est">Salvar Estudante</button>
+                        <button class="btn btn-danger" name="updt_est">Salvar Estudante</button>
                       </div>
                       </form>
-
+                      <?php 
+                            }else{
+                              echo "<h4>ID não encontrado </h4>";
+                            }
+                            
+                          }
+                      ?>
                     </div>    
                 </div>
             </div>

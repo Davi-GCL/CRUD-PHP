@@ -8,7 +8,7 @@ include("comps/banner.php");
 
   <!--/Navbar -->
 
-    <div class="container mt-3">
+    <div class="container mt-3 mb-5">
 
       <?php include("comps/mensagem.php"); ?>
         <div class="raw">
@@ -49,10 +49,10 @@ include("comps/banner.php");
         </div>
     </div>
 
+    <?php include("comps/footer.php");?>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <?php include("comps/footer.php");?>
   </body>
 </html>

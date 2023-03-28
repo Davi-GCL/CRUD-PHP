@@ -28,4 +28,27 @@ if(isset($_POST["add_est"])){
 
 
 }
+
+if(isset($_POST['updt_est'])){
+    $estudante_id = mysqli_real_escape_string($conn,$_POST["estudante"]);
+
+    $nome = mysqli_real_escape_string($conn, $_POST["nome"]);
+    $email = mysqli_real_escape_string($conn, $_POST["email"]);
+    $telefone = mysqli_real_escape_string($conn, $_POST["telefone"]);
+    $curso = mysqli_real_escape_string($conn, $_POST["curso"]);
+
+    $query = "UPDATE estudantes SET nome='$nome', email='$email', telefone='$telefone', curso='$curso' WHERE ID='$estudante_id'";
+
+    $query_exe = mysqli_query($conn, $query);
+
+    if($query_exe){
+        $_SESSION["mensagem"] = "Estudante atualizado !";
+        header("Location:index.php");
+        exit(0);
+    }else{
+        $_SESSION["mensagem"] = "Estudante NÃO atualizado !";
+        header("Location:index.php");
+        exit(0);
+    }
+}
 ?>
