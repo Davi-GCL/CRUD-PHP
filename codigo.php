@@ -30,7 +30,7 @@ if(isset($_POST["add_est"])){
 }
 
 if(isset($_POST['updt_est'])){
-    $estudante_id = mysqli_real_escape_string($conn,$_POST["estudante"]);
+    $estudante_id = mysqli_real_escape_string($conn,$_POST["estudante_id"]);
 
     $nome = mysqli_real_escape_string($conn, $_POST["nome"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);

@@ -34,6 +34,7 @@ include("comps/cabecalho.php");
                       <form action="codigo.php" method="POST">
                       <div class="mb-3">
                         <label for="">Nome do Estudante</label>
+                        <input type="hidden" class="form-control" name="estudante_id" value="<?= $estudante_id?>">
                         <input type="text" class="form-control" name="nome" value="<?=$estudante['nome'];?>">
                       </div>
                       <div class="mb-3">
@@ -50,7 +51,7 @@ include("comps/cabecalho.php");
                         <input type="text" class="form-control" name="curso" value="<?=$estudante['curso'];?>">
                       </div>
                       <div class="mb-3">
-                        <button class="btn btn-danger" name="updt_est">Salvar Estudante</button>
+                        <button class="btn btn-danger" name="updt_est" type="submit">Salvar Estudante</button>
                       </div>
                       </form>
                       <?php 
