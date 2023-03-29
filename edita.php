@@ -45,7 +45,7 @@ include("comps/cabecalho.php");
                         <label for="">Telefone</label>
                         <input type="text" class="form-control" name="telefone" value="<?=$estudante['telefone'];?>">
                       </div>
-                      <div class="mb-3">
+                      
                       <div class="mb-3">
                         <label for="">Curso</label>
                         <input type="text" class="form-control" name="curso" value="<?=$estudante['curso'];?>">
